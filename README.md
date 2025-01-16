@@ -1,10 +1,11 @@
-# ML--Code-from-Scratch
+# ML Algorithms From Scratch
 
-This repository contains Python implementations of fundamental machine learning algorithms developed from scratch. The primary objective is to provide a clear understanding of the inner workings of these algorithms without relying on high-level libraries.
+This repository contains Python implementations of fundamental machine learning algorithms developed from scratch. The primary objective is to provide a clear understanding of the inner workings of these algorithms without relying on high-level libraries. Each algorithm is explained intuitively before diving into the code. These explanations provide a conceptual understanding of the algorithm's logic, helping to grasp the core ideas before looking at the implementation details.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Project Structure](#project-structure)
 - [Implemented Algorithms](#implemented-algorithms)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,6 +17,17 @@ This repository contains Python implementations of fundamental machine learning 
 
 Understanding machine learning algorithms at a granular level is crucial for grasping their mechanics and effectively applying them. This project offers straightforward implementations of various machine learning algorithms using Python and foundational libraries like NumPy.
 
+## Project Structure
+
+- **models**: Contains subfolders for different types of learning:
+  - **Deep Learning**: Implementations of neural networks and related algorithms.
+  - **Supervised Learning**: Algorithms like Linear Regression, Logistic Regression, Decision Trees, etc.
+  - **Unsupervised Learning**: Algorithms like k-Means Clustering and Principal Component Analysis.
+- **utils**: Contains utility functions and helper scripts used across different models.
+- **README.md**: Documentation file for the project.
+- **requirements.txt**: Lists the dependencies required to run the project.
+- **setup.py**: A script for packaging and installing the project.
+  
 ## Implemented Algorithms
 
 The repository includes implementations of the following algorithms:
@@ -23,17 +35,23 @@ The repository includes implementations of the following algorithms:
 - **Supervised Learning:**
   - Linear Regression
   - Logistic Regression
-  - Decision Trees
   - Support Vector Machines
-  - k-Nearest Neighbors
-
+  - k-Nearest Neighbors (KNN)
+  - Linear Discriminant Analysis (LDA)
+  - Naive Bayes
+  - Decision Trees
+  - Random Forest
+  - Adaboost
+  - LightGBM
+  - XGBoost
+  - Perceptron
+    
 - **Unsupervised Learning:**
   - k-Means Clustering
-  - Principal Component Analysis
-
-- **Neural Networks:**
-  - Feedforward Neural Network
-  - Convolutional Neural Network
+  - Principal Component Analysis (PCA)
+  - Long Short-Term Memory (LSTM)
+  - Convolutional Neural Network (CNN)
+  - Generative Adversarial Network (GAN)
 
 ## Installation
 
@@ -58,18 +76,14 @@ The repository includes implementations of the following algorithms:
    pip install -r requirements.txt
    ```
 
-*Ensure that the `requirements.txt` file is present and lists all necessary dependencies.*
-
 ## Usage
 
-Each algorithm is accompanied by a demonstration script illustrating its application. To execute a specific example, run:
+Each algorithm is provided within an interactive Jupyter Notebook, making it easier to work with and understand. To run any notebook, use the following command:
 
 ```bash
-python examples/algorithm_name_example.py
+jupyter notebook
 ```
-
-*Replace `algorithm_name_example.py` with the actual script name.*
-
+This will open the Jupyter Notebook interface in your web browser. Navigate to the desired notebook and run the cells sequentially to see the implementation and results.
 For a comprehensive understanding, refer to the docstrings and comments within each implementation.
 
 ## Contributing
